@@ -1,4 +1,4 @@
 startpage
 =========
 
-Custom browser Homepage (Work In Progress)
+Custom browser Homepage (HTML5 + CSS3 + JS). Icons made by me (.svg conversion in progress). 
