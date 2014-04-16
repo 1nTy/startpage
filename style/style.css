@@ -8,231 +8,142 @@ body {
 a {
 	text-decoration: none;
 	border: 0;								
-	border-bottom: 1px solid rgba(0,0,0,0.0);
-	-o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-	
+}
+
+.global img {
+	border-radius: 50%; 
+	-webkit-border-radius: 50%; 
+	-moz-border-radius: 50%;
+
+	width: 50px; 
+	height: 50px;
+	position:absolute;
 }
 
 
-/*	Social	*/
 
+/*	SOCIAL	*/
 
-	.facebook {
-		border-radius: 100%;
-		-webkit-border-radius: 100%;
-		-moz-border-radius: 100%;
-
-		width: 50px; 
-		height: 50px;
-
-		position:absolute;
+	.social img { 
 		top: 25px;
-		left: 25px;
-	}
-
-	.twitter {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-
-		position:absolute;
-		top: 25px;
-		left: 100px;
-		
-	}
-
-	.googleplus {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-		
-		position:absolute;
-		top: 25px;
-		left: 175px;
-	}
-
-	.tumblr {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-		
-		position:absolute;
-		top: 25px;
-		left: 250px;
-	}
-
-	.youtube {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-		
-		position:absolute;
-		top: 25px;
-		left: 325px;
 	}
 
 
-/*	Graphic	*/
+		.facebook {
+			left: 25px;
+		}
 
+		.twitter {
+			left: 100px;
+			
+		}
 
-	.deviantart {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-		
-		position:absolute;
+		.googleplus {
+			left: 175px;
+		}
+
+		.tumblr {
+			left: 250px;
+		}
+
+		.youtube {
+			left: 325px;
+		}
+
+/* 	GRAPHIC	*/
+
+	.graphic img { 
 		top: 100px;
-		left: 25px;
-	}
-
-	.kuler {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-		
-		position:absolute;
-		top: 100px;
-		left: 100px;
 	}
 
 
-/*	Cloud	*/
+		.deviantart {
+			left: 25px;
+		}
 
+		.kuler {
+			left: 100px;
+		}
 
-	.dropbox {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
+ /*	CLOUD	*/
 
-		position:absolute;
-		top: 175px;
-		left: 25px;
-	}
-
-	.box {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-
-		position:absolute;
-		top: 175px;
-		left: 100px;
-	}
-
-	.onedrive {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-
-		position:absolute;
-		top: 175px;
-		left: 175px;
-	}
-	.googledrive {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-
-		position:absolute;
-		top: 175px;
-		left: 250px;
-	}
-
-	.mega {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-
-		position:absolute;
-		top: 175px;
-		left: 325px;
+	.cloud img { 
+			top: 175px;
 	}
 
 
-/*	News	*/
+		.dropbox {
+			left: 25px;
+		}
 
-	.feedly {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
+		.box {
+			left: 100px;
+		}
 
-		position:absolute;
+		.onedrive {
+			left: 175px;
+		}
+
+		.googledrive {
+			left: 250px;
+		}
+
+		.mega {
+			left: 325px;
+		}
+
+/*	NEWS	*/
+
+	.news img { 		
 		top: 250px;
-		left: 25px;
 	}
 
-	.pocket {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
 
-		position:absolute;
-		top: 250px;
-		left: 100px;
-	}
+		.feedly {
+			left: 25px;
+		}
 
-/*	Store	*/
+		.pocket {
+			left: 100px;
+		}
 
-	.amazon {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
+/*	STORE	*/
 
-		position:absolute;
+	.store img { 
 		top: 325px;
-		left: 25px;
 	}
 
-	.ebay {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
 
-		position:absolute;
-		top: 325px;
-		left: 100px;
-	}
+		.amazon {
+			left: 25px;
+		}
 
-	.steam {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
+		.ebay {
+			left: 100px;
+		}
 
-		position:absolute;
-		top: 325px;
-		left: 175px;
-	}
+		.steam {
+			left: 175px;
+		}
 
-/*	Forum */
+/*	FORUM	*/
 
-	.arch {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
-
-		position:absolute;
+	.forum img { 
 		top: 400px;
-		left: 25px;
 	}
 
-/* fun */
 
-	.ninegag {
-		border-radius: 100%;
-		width: 50px; 
-		height: 50px;
+		.arch {
+			left: 25px;
+		}
 
-		position:absolute;
+/*	FUN		*/
+
+	.fun img { 
 		top: 475px;
-		left: 25px;
 	}
+	
 
-
-
-
-
-
-
+		.ninegag {
+			left: 25px;
+		}
