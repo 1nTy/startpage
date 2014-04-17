@@ -1,0 +1,82 @@
+body {
+	background: #404040;	
+	margin-top: 0;
+	margin-left: 0;
+}
+
+
+a {
+	text-decoration: none;
+	border: 0;								
+}
+
+.icons img {
+	border-radius: 50%; 
+	-webkit-border-radius: 50%; 
+	-moz-border-radius: 50%;
+
+	width: 50px; 
+	height: 50px;
+	position:absolute;
+}
+
+
+
+/*	LINES	*/
+
+	.social img { 
+		top: 25px;
+	}
+
+	.cloud img { 
+		top: 100px;
+	}
+
+	.graphic img { 
+		top: 175px;
+	}
+
+	.news img { 		
+		top: 250px;
+	}
+
+	.store img { 
+		top: 325px;
+	}
+
+	.forum img { 
+		top: 400px;
+	}
+
+	.fun img { 
+		top: 475px;
+	}
+
+
+/*	ROW */
+
+
+	.facebook, .dropbox, .deviantart, .feedly, .amazon, .arch, .ninegag {
+		left: 25px;
+	}
+
+
+	.twitter, .box, .kuler, .pocket, .ebay {
+		left: 100px;
+			
+	}
+
+
+	.googleplus, .onedrive, .steam {
+		left: 175px;
+	}
+
+
+	.tumblr, .googledrive {
+		left: 250px;
+	}
+
+
+	.youtube, .mega {
+		left: 325px;
+	}
