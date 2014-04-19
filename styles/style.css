@@ -10,6 +10,7 @@ a {
 	border: 0;								
 }
 
+
 .icons img {
 	border-radius: 50%; 
 	-webkit-border-radius: 50%; 
@@ -22,7 +23,7 @@ a {
 
 
 
-/*	LINES	*/
+/*	COLUM	*/
 
 	.social img { 
 		top: 25px;
@@ -36,38 +37,44 @@ a {
 		top: 175px;
 	}
 
-	.news img { 		
+	.multimedia img { 
 		top: 250px;
 	}
 
-	.store img { 
+	.news img { 		
 		top: 325px;
 	}
 
-	.forum img { 
+	.store img { 
 		top: 400px;
 	}
 
-	.fun img { 
+	.forum img { 
 		top: 475px;
 	}
 
+	.fun img { 
+		top: 550px;
+	}
+
+	.developer img { 
+		top: 625px;
+	}
 
 /*	ROW */
 
-
-	.facebook, .dropbox, .deviantart, .feedly, .amazon, .arch, .ninegag {
+	.facebook, .dropbox, .deviantart, .youtube, .feedly, .amazon, .arch, .ninegag, .github {
 		left: 25px;
 	}
 
 
-	.twitter, .box, .kuler, .pocket, .ebay {
+	.twitter, .box, .kuler, .soundcloud, .pocket, .ebay {
 		left: 100px;
 			
 	}
 
 
-	.googleplus, .onedrive, .steam {
+	.googleplus, .onedrive, .steam, .evernote {
 		left: 175px;
 	}
 
@@ -77,6 +84,6 @@ a {
 	}
 
 
-	.youtube, .mega {
+	.mega {
 		left: 325px;
 	}
