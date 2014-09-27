@@ -1,167 +1,110 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="shortcut icon" href="images/favicon.ico"/>
 
-		<link rel="stylesheet" type="text/css" href="style/style.css"/>
-		<link rel="shortcut icon" href="images/favicon/favicon.ico"/>
+		<title>Homepage</title>        
+        
+        <script src="scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
 
-		<title>Homepage</title>
-
-
-		<!--	MouseOver function	-->
-
-			<script type="text/javascript" src="scripts/icons.js"></script>
-
-
-		<!--	JQuery	-->
-
-			<script src="scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
+        <script src="scripts/go.main.min.js" type="text/javascript"></script>        
+        <script src="scripts/go.tools.min.js" type="text/javascript"></script>
+        <script src="scripts/search.index.min.js" type="text/javascript"></script>
+        <script src="scripts/search.form.min.js" type="text/javascript"></script>
+        <script src="scripts/search.suggest.min.js" type="text/javascript"></script>
 		
-
-		<!--	InfiniseGo	-->
-
-			<script src="scripts/go.main.js" type="text/javascript"></script>
-			<script src="scripts/go.tools.js" type="text/javascript"></script>
-			<script src="scripts/search.index.js" type="text/javascript"></script>
-			<script src="scripts/search.form.js" type="text/javascript"></script>
-			<script src="scripts/search.suggest.js" type="text/javascript"></script>
-		
-			<script src="engines/google.js" type="text/javascript"></script>
-			<script src="engines/wikipedia.js" type="text/javascript"></script>
-			<script src="engines/wolfram.js" type="text/javascript"></script>	
-			<script src="engines/archlinux.js" type="text/javascript"></script>
-
-				<!--	<script src="engines/github.js" type="text/javascript"></script>	--> 
-
+        <script type="text/javascript">
+           eng.google={pageTitle:"Google",logo:"google.png",places:{Web:["https://www.google.com/search?q=%query%&hl=%lang%",false],Immagini:["http://images.google.com/images?q=%query%&hl=%lang%",false],Mappe:["https://maps.google.com/maps?q=%query%",false],Gmail:["https://mail.google.com/mail/u/0/?hl=%lang%&shva=1#search/%query%",false],Drive:["https://drive.google.com/?tab=wo&authuser=0#search/%query%",false],Play:["https://play.google.com/store/search?q=%query%",false],YouTube:["http://www.youtube.com/results?search_query=%query%",false]},languages:{IT:"it",EN:"en",DE:"de",FR:"fr",ES:"es",RU:"ru",NL:"nl"}};eng.wikipedia={pageTitle:"Wikipedia",logo:"wikipedia.png",places:{Cerca:["http://%lang%.wikipedia.org/wiki/Special:Search?search=%query%&fulltext=Search",false],Vai:["http://%lang%.wikipedia.org/wiki/Special:Search?search=%query%&go=Go",false]},languages:{IT:"it",EN:"en",DE:"de",FR:"fr"}};eng.wolfram={pageTitle:"Wolfram|Alpha",logo:"wolfram.png",places:{Calcola:["https://www.wolframalpha.com/input/?i=%query%",false]},languages:{EN:"en"}};eng.archlinux={pageTitle:"ArchLinux",logo:"archlinux.png",places:{Forum:["http://www.archlinux.it/forum/search.php?keywords=%query%",false],Wiki:["https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=%query%&go=Go",false],Pacchetti:["http://www.archlinux.org/packages/?q=%query%",false],AUR:["https://aur.archlinux.org/packages.php?O=0&K=%query%&do_Search=Go",false],ExplainShell:["http://www.explainshell.com/explain?cmd=%query%",false]},languages:{IT:"it"}}
+        </script>
+        
+        <style type="text/css">
+        *{margin:0;padding:0;text-decoration:none}body{background:#404040;-webkit-text-size-adjust:none;-webkit-user-select:none;font:13px Helvetica,Arial,sans-serif}.links img{border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;height:7%;position:absolute}.amazon,.arch,.deviantart,.dropbox,.facebook,.feedly,.ninegag,.youtube{top:35%}.box,.ebay,.kuler,.pocket,.twitter{top:45%}.googleplus,.onedrive,.stackedit,.steam{top:55%}.daumn,.googledrive,.tumblr{top:65%}.mega,.soundcloud{top:75%}.social img{left:32.5%}.cloud img{left:37.5%}.graphic img{left:42.5%}.news img{left:52.5%}.store img{left:57.5%}.fun img{left:62.55%}.php{bottom:2.5%;right:2.5%}
+      
+        #container{position:absolute;left:50%;top:25%;width:500px;height:350px;margin:-70px 0 0 -250px}#engines{width:700px;height:80px;position:absolute;left:50%;top:2.5%;margin:0 0 110px -350px}#engines a{display:block;width:225px;height:80px;cursor:pointer;opacity:0;position:absolute;-webkit-border-radius:5px;-moz-border-radius:5px}#engines a img{display:block;height:100%;width:100%}#box{background:#383838;-webkit-border-radius:50px;-moz-border-radius:50px;padding:2% 15%;position:relative}#input input{-webkit-appearance:searchfield;font:16px HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;color:#363d42;width:343px;padding:6px 38px 6px 35px}#lang{position:absolute;right:49px;top:25%;font-size:13px;font-weight:700;padding:3px 5px;-webkit-border-radius:3px;-moz-border-radius:3px;color:#b7c2cf;cursor:pointer}#lang:hover{background:#b7c2cf;color:#fff}#lang:active{background:#939fad}#method{text-align:center;margin-top:30px}#method a{padding:3px 6px;margin:0 2px;cursor:pointer;color:#939fad;-webkit-border-radius:3px;-moz-border-radius:3px}#method a.active,#method a:hover{background:#b7c2cf;color:#fff}#method a:active{background:#939fad}#sugs{display:none;position:absolute;background:rgba(255,255,255,.8);border:1px solid #dae2e9;border-top:0;left:41px;top:68px;right:41px;list-style:none;padding:3px 0;font-size:11px;-webkit-border-bottom-left-radius:5px;-webkit-border-bottom-right-radius:5px;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px}#sugs li a{display:block;padding:3px 8px;color:#74889e}#sugs li.active a{background:#b7c2cf;color:#fff}#sugs li a:active{background:#939fad}
+        </style>
+        
 	</head>
-
-
-
-	<body class="global">
-
-	<!--	InfiniseGo	-->
-	
-		<div id="engines"></div>
-
-		<div id="container">
-			
-			<form id="form" onsubmit="return doSearch()">
-				<div id="box">
-
-					<div id="input">
-						<input id="i" type="text" results="5"/>
-					</div>
-
-					<a onclick="nextLanguage()" id="lang"></a>
-					<ul id="sugs"></ul>
-				</div>
-			</form>
-			
-			<p id="method"></p>
-			
-		</div>
-
-
-		<script>
-			init();
+    
+	<body>
+        <div id="engines"></div>
+            <div id="container">
+                <form id="form" onsubmit="return doSearch()">
+                    <div id="box">
+                        <div id="input">
+                            <input id="i" type="search" results="5"/>
+                        </div>
+                        <a onclick="nextLanguage()" id="lang"></a>
+                        <ul id="sugs"></ul>
+                    </div>
+                </form>
+                <p id="method"></p>
+        </div>
+        
+        <script type="text/javascript">
+            init();
 		</script>
 
-	<!--	Links	-->
+        <div class="links">
 
- 		<div class="links">
+	       <div class="social">
+               <a href="https://www.facebook.com"><img class="facebook" name="facebook" alt="Facebook" src="images/icons/fb_n.png" onmouseover="this.src='images/icons/fb_t.png'" onmouseout="this.src='images/icons/fb_n.png'"/></a>
+                
+				<a href="https://www.twitter.com"><img class="twitter" name="twitter" alt="Twitter" src="images/icons/twitter_n.svg" onmouseover="this.src='images/icons/twitter_t.svg'" onmouseout="this.src='images/icons/twitter_n.svg'"/></a>
 
-			<div class="social">
+				<a href="https://plus.google.com/u/0/"><img class="googleplus" name="googleplus" alt="Google +" src="images/icons/googleplus_n.png" onmouseover="this.src='images/icons/googleplus_t.png'" onmouseout="this.src='images/icons/googleplus_n.png'"/></a>
 
-				<a href="https://www.facebook.com" onmouseover="facebook.src=load_fb.src;" onmouseout="facebook.src=norm_fb.src;">
-				<img class="facebook" name="facebook" alt="Facebook" src="images/icons/fb_n.png"></a>
-						
-				<a href="https://www.twitter.com" onmouseover="twitter.src=load_twitt.src;" onmouseout="twitter.src=norm_twitt.src;">
-				<img class="twitter" name="twitter" alt="Twitter" src="images/icons/twitter_n.svg"></a>
+				<a href="https://www.tumblr.com/dashboard"><img class="tumblr" name="tumblr" alt="Tulmblr" src="images/icons/tumblr_n.png" onmouseover="this.src='images/icons/tumblr_t.png'" onmouseout="this.src='images/icons/tumblr_n.png'"/></a>
 
-				<a href="https://plus.google.com/u/0/" onmouseover="googleplus.src=load_gplus.src;" onmouseout="googleplus.src=norm_gplus.src;">
-				<img class="googleplus" name="googleplus" alt="Google +" src="images/icons/googleplus_n.png"></a>
-
-				<a href="https://www.tumblr.com/dashboard" onmouseover="tumblr.src=load_tumblr.src;" onmouseout="tumblr.src=norm_tumblr.src;">
-				<img class="tumblr" name="tumblr" alt="Tulmblr" src="images/icons/tumblr_n.png"></a>
-
-				<a href="https://soundcloud.com/babylon-k" onmouseover="soundcloud.src=load_sd.src;" onmouseout="soundcloud.src=norm_sd.src;">
-				<img class="soundcloud" name="soundcloud" alt="SoundCloud" src="images/icons/soundcloud_n.png"></a>
-
-			</div>
+				<a href="https://soundcloud.com/babylon-k"><img class="soundcloud" name="soundcloud" alt="SoundCloud" src="images/icons/soundcloud_n.png" onmouseover="this.src='images/icons/soundcloud_t.png'" onmouseout="this.src='images/icons/soundcloud_n.png'"/></a>
+            </div>
 
 			<div class="graphic">
+				<a href="https://www.deviantart.com/"><img class="deviantart" name="deviantart" alt="DeviantArt" src="images/icons/deviantart_n.png" onmouseover="this.src='images/icons/deviantart_t.png'" onmouseout="this.src='images/icons/deviantart_n.png'"/></a>
 
-				<a href="https://www.deviantart.com/" onmouseover="deviantart.src=load_da.src;" onmouseout="deviantart.src=norm_da.src;">
-				<img class="deviantart" name="deviantart" alt="DeviantArt" src="images/icons/deviantart_n.png"></a>
-
-				<a href="https://kuler.adobe.com/create/color-wheel/" onmouseover="kuler.src=load_kuler.src;" onmouseout="kuler.src=norm_kuler.src;">
-				<img class="kuler" name="kuler" alt="Kuler" src="images/icons/kuler_n.png"></a>
-
-			</div>	
+				<a href="https://kuler.adobe.com/create/color-wheel/"><img class="kuler" name="kuler" alt="Kuler" src="images/icons/kuler_n.png" onmouseover="this.src='images/icons/kuler_t.png'" onmouseout="this.src='images/icons/kuler_n.png'"/></a>
+            </div>
 
 
-			<div class="cloud">
-				
-				<a href="https://www.dropbox.com/home" onmouseover="dropbox.src=load_db.src;" onmouseout="dropbox.src=norm_db.src;">
-				<img class="dropbox" name="dropbox" alt="Dropbox" src="images/icons/dropbox_n.svg"></a>
+			<div class="cloud">		
+				<a href="https://www.dropbox.com/home"><img class="dropbox" name="dropbox" alt="Dropbox" src="images/icons/dropbox_n.png" onmouseover="this.src='images/icons/dropbox_t.png'" onmouseout="this.src='images/icons/dropbox_n.png'"/></a>
 
-				<a href="https://app.box.com/files" onmouseover="box.src=load_box.src;" onmouseout="box.src=norm_box.src;">
-				<img class="box" name="box" alt="Box" src="images/icons/box_n.png"></a>
+				<a href="https://app.box.com/files"><img class="box" name="box" alt="Box" src="images/icons/box_n.png" onmouseover="this.src='images/icons/box_t.png'" onmouseout="this.src='images/icons/box_n.png'"/></a>
 
-				<a href="https://onedrive.live.com/" onmouseover="onedrive.src=load_1drive.src;" onmouseout="onedrive.src=norm_1drive.src;">
-				<img class="onedrive" name="onedrive" alt="OneDrive" src="images/icons/onedrive_n.png"></a>
+				<a href="https://onedrive.live.com/"><img class="onedrive" name="onedrive" alt="OneDrive" src="images/icons/onedrive_n.png" onmouseover="this.src='images/icons/onedrive_t.png'" onmouseout="this.src='images/icons/onedrive_n.png'"/></a>
 
-				<a href="https://drive.google.com/#my-drive" onmouseover="googledrive.src=load_gdrive.src;" onmouseout="googledrive.src=norm_gdrive.src;">
-				<img class="googledrive" name="googledrive" alt="Google Drive" src="images/icons/googledrive_n.png"></a>
+				<a href="https://drive.google.com/#my-drive"><img class="googledrive" name="googledrive" alt="Google Drive" src="images/icons/googledrive_n.png" onmouseover="this.src='images/icons/googledrive_t.png'" onmouseout="this.src='images/icons/googledrive_n.png'"/></a>
 
-				<a href="https://mega.co.nz/" onmouseover="mega.src=load_mega.src;" onmouseout="mega.src=norm_mega.src;">
-				<img class="mega" name="mega" alt="Mega" src="images/icons/mega_n.png"></a>
-
+				<a href="https://mega.co.nz/"><img class="mega" name="mega" alt="Mega" src="images/icons/mega_n.png" onmouseover="this.src='images/icons/mega_t.png'" onmouseout="this.src='images/icons/mega_n.png'"/></a>
 			</div>
-
 
 			<div class="news">
+				<a href="https://feedly.com/index.html#latest"><img class="feedly" name="feedly" alt="Feedly" src="images/icons/feedly_n.png" onmouseover="this.src='images/icons/feedly_t.png'" onmouseout="this.src='images/icons/feedly_n.png'"/></a>
 
-				<a href="https://feedly.com/index.html#latest" onmouseover="feedly.src=load_feedly.src;" onmouseout="feedly.src=norm_feedly.src;">
-				<img class="feedly" name="feedly" alt="Feedly" src="images/icons/feedly_n.png"></a>
-
-				<a href="https://getpocket.com/a/queue/" onmouseover="pocket.src=load_pocket.src;" onmouseout="pocket.src=norm_pocket.src;">
-				<img class="pocket" name="pocket" alt="Pocket" src="images/icons/pocket_n.png"></a>
-
-				<a href="https://www.evernote.com/Home.action‎" onmouseover="evernote.src=load_evernote.src;" onmouseout="evernote.src=norm_evernote.src;">
-				<img class="evernote" name="evernote" alt="Evernote" src="images/icons/evernote_n.png"></a>
-
+				<a href="https://getpocket.com/a/queue/"><img class="pocket" name="pocket" alt="Pocket" src="images/icons/pocket_n.png" onmouseover="this.src='images/icons/pocket_t.png'" onmouseout="this.src='images/icons/pocket_n.png'"/></a>
+                
+                <a href="https://stackedit-beta.herokuapp.com/#"><img class="stackedit" name="stackedit" alt="Stackedit" src="images/icons/stackedit_n.png" onmouseover="this.src='images/icons/stackedit_t.png'" onmouseout="this.src='images/icons/stackedit_n.png'"/></a>                
+    
+                <a href="http://s1.daumcdn.net/editor/fp/service_nc/pencil/Pencil_chromestore.html"><img class="daumn" name="daumn" alt="Daumn" src="images/icons/daumn_n.png" onmouseover="this.src='images/icons/daumn_t.png'" onmouseout="this.src='images/icons/daumn_n.png'"/></a>
 			</div>
-
 
 			<div class="store">
+				<a href="https://www.amazon.it/"><img class="amazon" name="amazon" alt="Amazon" src="images/icons/amazon_n.png" onmouseover="this.src='images/icons/amazon_t.png'" onmouseout="this.src='images/icons/amazon_n.png'"/></a>
 
-				<a href="https://www.amazon.it/" onmouseover="amazon.src=load_amazon.src;" onmouseout="amazon.src=norm_amazon.src;">
-				<img class="amazon" name="amazon" alt="Amazon" src="images/icons/amazon_n.png"></a>
+				<a href="http://wwww.ebay.it/"><img class="ebay" name="ebay" alt="ebay" src="images/icons/ebay_n.png" onmouseover="this.src='images/icons/ebay_t.png'" onmouseout="this.src='images/icons/ebay_n.png'"/></a>
 
-				<a href="https://www.ebay.it/" onmouseover="ebay.src=load_ebay.src;" onmouseout="ebay.src=norm_ebay.src;">
-				<img class="ebay" name="ebay" alt="ebay" src="images/icons/ebay_n.png"></a>
-
-				<a href="https://store.steampowered.com/" onmouseover="steam.src=load_steam.src;" onmouseout="steam.src=norm_steam.src;">
-				<img class="steam" name="steam" alt="Steam" src="images/icons/steam_n.png"></a>
-
+				<a href="https://store.steampowered.com/"><img class="steam" name="steam" alt="Steam" src="images/icons/steam_n.png" onmouseover="this.src='images/icons/steam_t.png'" onmouseout="this.src='images/icons/steam_n.png'"/></a>
 			</div>
-
 
 			<div class="fun">
 
-				<a href="https://www.9gag.com/hot" onmouseover="ninegag.src=load_9gag.src;" onmouseout="ninegag.src=norm_9gag.src;">
-				<img class="ninegag" name="ninegag" alt="9GAG" src="images/icons/ninegag_n.png"></a>
-
+				<a href="https://www.9gag.com/hot"><img class="ninegag" name="ninegag" alt="9GAG" src="images/icons/ninegag_n.png" onmouseover="this.src='images/icons/ninegag_t.png'" onmouseout="this.src='images/icons/ninegag_n.png'"/></a>
 			</div>
-
-		</div>
-
-	</body>
-
+            
+            <a href="http://localhost:8888"><img class="php"alt="php"src="images/icons/php_n.png"onmouseover="this.src='images/icons/php_t.png'" onmouseout="this.src='images/icons/php_n.png'"/></a>
+        </div>
+    </body>
 </html>

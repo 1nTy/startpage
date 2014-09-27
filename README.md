@@ -1,42 +1,34 @@
-Startpage
-=========
+# <center>CustomPage</center>
 
-### ATTENTION
+**ATTENTION**
+I developed this project for learning and personal purpose.
 
-I developed this project for learning (and personal) purpose.
+
 
 Custom browser Homepage. Work In Progress. Better README in final version.
 
-
-To do
---------
-
-Settings 
-
-SVG icon "conversion" / [CSS incon "conversion"](https://github.com/bchanx/logos-in-pure-css) (?)
-
-Minor changes
+![](https://github.com/1nTy/startpage/blob/master/screen.png)
 
 
+## To do
 
-License
--------
-
-
-HTML + CSS + JS:	released under the terms of the ["GPL" license](https://github.com/1nTy/startpage/blob/master/LICENSE_code)
-
-[Infinise Go engines](https://github.com/1nTy/infinise-engines):	read the [license](https://github.com/1nTy/infinise-engines/blob/master/LICENSE)
-
-Icons:	released under the term of the ["Creative Commons" license](http://creativecommons.org/licenses/by-nc-sa/4.0/) 
+* Settings
+* SVG icon
 
 
-![license](http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+## License
 
 
+* **index.html** released under the terms of the [**GPL** license](https://github.com/1nTy/startpage/blob/master/LICENSE)
 
-### This project use this opensource resuorces:
+* [**Infinise Go engines**](https://github.com/1nTy/infinise-engines) released under the terms of the [**GPL** license](https://github.com/1nTy/startpage/blob/master/LICENSE)
+
+* **Icons** released under the term of the [**Creative Commons** license](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+<center>![license](http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)</center>
 
 
-[InfiniseGo](https://github.com/infinise/InfiniseGo):	read the [license](https://github.com/1nTy/startpage/blob/master/LICENSE_infinisego)
+#### This project use this opensource resuorces:
 
 
+* [InfiniseGo](https://github.com/infinise/InfiniseGo)
