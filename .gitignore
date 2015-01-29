@@ -1,9 +1,3 @@
-# Uncompiled CSS #
-###################
-.less
-.scss
-
-
 # OS generated files #
 ######################
 .DS_Store
@@ -13,3 +7,5 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+scss-lint.log
+config.codekit

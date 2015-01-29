@@ -1,0 +1,5 @@
+@mixin drop-shadow ($x-axis: 0, $y-axis: 1px, $z-axis: 0, $blur: 0, $alpha: 0.1) {
+    -webkit-box-shadow: $x-axis $y-axis $z-axis $blur rgba(0, 0, 0, $alpha);
+       -moz-box-shadow: $x-axis $y-axis $z-axis $blur rgba(0, 0, 0, $alpha);
+            box-shadow: $x-axis $y-axis $z-axis $blur rgba(0, 0, 0, $alpha);
+}

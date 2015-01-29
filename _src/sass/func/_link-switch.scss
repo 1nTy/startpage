@@ -1,0 +1,8 @@
+@mixin link-switch ($y-axis, $x-axis, $file-name) {
+    top: $y-axis;
+    left: $x-axis;
+    content: url("../img/links/#{$file-name}_n.png");
+    &:hover { 
+        content: url("../img/links/#{$file-name}.png");
+    }
+}

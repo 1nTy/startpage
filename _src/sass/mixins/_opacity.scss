@@ -1,0 +1,5 @@
+@mixin opacity ($alpha: 0.5) {
+	-webkit-opacity: $alpha;
+	   -moz-opacity: $alpha;
+            opacity: $alpha;
+}

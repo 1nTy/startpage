@@ -1,0 +1,52 @@
+@mixin border-radius-top-right ($top-right: 0) {
+    -webkit-border-top-right-radius: $top-right;
+       -moz-border-radius-topright: $top-right;
+            border-top-right-radius: $top-right;
+
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding; 
+            background-clip: padding-box; 
+}
+
+@mixin border-radius-top-left ($top-left: 0) {
+    -webkit-border-top-left-radius: $top-left;
+       -moz-border-radius-topleft: $top-left;
+            border-top-left-radius: $top-left;
+    
+    -webkit-background-clip: padding-box; 
+	   -moz-background-clip: padding; 
+            background-clip: padding-box; 
+}
+@mixin border-radius-bottom-right ($bottom-right: 0) {
+    -webkit-border-bottom-right-radius: $bottom-right;
+       -moz-border-radius-bottomright: $bottom-right;
+            border-bottom-right-radius: $bottom-right;
+    
+    -webkit-background-clip: padding-box; 
+	   -moz-background-clip: padding; 
+            background-clip: padding-box; 
+}
+@mixin border-radius-bottom-left ($bottom-left: 0) {
+    -webkit-border-bottom-left-radius: $bottom-left;
+       -moz-border-radius-bottomleft: $bottom-left;
+            border-bottom-left-radius: $bottom-left;
+    
+    -webkit-background-clip: padding-box; 
+	   -moz-background-clip: padding; 
+            background-clip: padding-box; 
+}
+
+@mixin border-radius-top ($args...) {
+    @include border-radius-top-right;
+    @include border-radius-top-left;
+}
+
+@mixin border-radius-bottom ($args...) {
+    @include border-radius-bottom-right;
+    @include border-radius-bottom-left;
+}
+
+@mixin border-radius ($args...) {
+    @include border-radius-top;
+    @include border-radius-bottom;
+}

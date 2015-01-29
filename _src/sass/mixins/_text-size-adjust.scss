@@ -1,0 +1,4 @@
+@mixin text-size-adjust ($arg: none) {
+    -webkit-text-size-adjust: $arg;
+        -ms-text-size-adjust: $arg;
+}

@@ -1,0 +1,238 @@
+@import 'hammer';
+
+$font-size: (13em / 16);
+$font-size-input: (16em / 16);
+$font-size-info: (13em / 16);
+$font-size-sugs: (11em / 16);
+
+$background-color: #404040;
+
+$x-offset: 5%;
+$y-offset: ($x-offset * 2);
+
+$x-axis-1: 32.5%;
+$x-axis-2: $x-axis-1 + $x-offset;
+$x-axis-3: $x-axis-2 + $x-offset;
+$x-axis-4: $x-axis-3 + $x-offset;
+$x-axis-5: $x-axis-4 + $x-offset;
+$x-axis-6: $x-axis-5 + $x-offset;
+$x-axis-7: $x-axis-6 + $x-offset;
+
+$y-axis-1: 45%;
+$y-axis-2: $y-axis-1 + $y-offset;
+$y-axis-3: $y-axis-2 + $y-offset;
+$y-axis-4: $y-axis-3 + $y-offset;
+$y-axis-5: $y-axis-4 + $y-offset;
+
+
+ body {
+    @include text-size-adjust (none);
+    @include user-select (none);
+     
+    font: $font-size $helvetica;
+     
+    background-color: $background-color;
+}
+
+.links a {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    height: 7%;
+    @include rounded (50%);
+    @include drop-shadow (0, 10px, 5px, 0, 0.25);
+}
+
+.amazon {@include link-switch ($y-axis-1, $x-axis-6, amazon);}
+.boxnet {@include link-switch ($y-axis-2, $x-axis-2, box);}
+.colorcc {@include link-switch ($y-axis-2, $x-axis-3, colorcc);}
+.deviantart {@include link-switch ($y-axis-1, $x-axis-3, deviantart);}
+.dropbox {@include link-switch ($y-axis-1, $x-axis-2, dropbox);}
+.ebay {@include link-switch ($y-axis-2, $x-axis-6, ebay);}
+.facebook {@include link-switch ($y-axis-1, $x-axis-1, facebook);}
+.feedly {@include link-switch ($y-axis-1, $x-axis-5, feedly);}
+.github {@include link-switch ($y-axis-1, $x-axis-7, github);}
+.googledrive {@include link-switch ($y-axis-3, $x-axis-2, googledrive);}
+.googleplus {@include link-switch ($y-axis-3, $x-axis-1, googleplus);}
+.mega {@include link-switch ($y-axis-5, $x-axis-2, mega);}
+.ninegag {@include link-switch ($y-axis-3, $x-axis-5, ninegag);}
+.onedrive {@include link-switch ($y-axis-4, $x-axis-2, onedrive);}
+.pocket {@include link-switch ($y-axis-2, $x-axis-5, pocket);}
+.soundcloud {@include link-switch ($y-axis-5, $x-axis-1, soundcloud);}
+.steam {@include link-switch ($y-axis-3, $x-axis-6, steam);}
+.tumblr {@include link-switch ($y-axis-4, $x-axis-1, tumblr);}
+.twitter {@include link-switch ($y-axis-2, $x-axis-1, twitter);}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 500px;
+    height: 350px;
+    margin: -70px 0 0 -250px;
+}
+
+.engines {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    width: 700px;
+    height: 80px;
+    margin: 0 0 110px -350px;
+    
+    a {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        width: 225px;
+        height: 80px;
+        @include rounded (5px);
+        
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        
+    }
+    
+}
+
+.box {
+    position: relative;
+    padding: 1% 15%;
+}
+
+.input input {
+    @include appearance (searchfield);
+    font-size: $font-size-input;
+    font-weight: 300;
+    color: #363d42;
+    width: 343px;
+    padding: 6px 38px 6px 33px;
+}
+
+.lang {
+    position: absolute;
+    cursor: pointer;
+    color: #b7c2cf;
+    top: 15%;
+    right: 30px;
+    padding: 3px 5px;
+    font-weight: bold;
+    @include rounded (3px);
+    
+    &:hover {
+        background: #b7c2cf;
+        color: #ffffff;
+    }
+    
+    &:active {
+        background: #939fad;
+    }
+    
+}
+
+.method {
+    text-align: center;
+    margin-top: 30px;
+    
+    a {
+        padding: 3px 6px;
+        margin: 0 2px;
+        cursor: pointer;
+        color: #939fad;
+        @include rounded (3px);
+        
+        &.active, &:hover {
+            background: #b7c2cf;
+            color: #ffffff;
+        }
+        
+        &:active {
+            background: #939fad; // FIXME: :hover or :active?
+        }
+        
+    }
+    
+}
+
+.info {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.toggleInfo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(img/misc/info.png);
+    width: 16px;
+    height: 16px;
+    color: #000000;
+    color: rgba(0, 0, 0, 0);
+    @include opacity (0.2);
+    cursor: pointer;
+    
+    &:hover {
+        @include opacity (0.5);
+    }
+    
+    &:active {
+        @include opacity (0.7);
+    }
+}
+
+.infoBox {
+    display: none;
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    background: #ecf2f8;
+    @include rounded (8px);
+    padding: 10px 20px;
+    width: 300px;
+    font-size: $font-size-info;
+    line-height: 16px;
+    color: #363d42;
+    
+    p {
+        margin: 5px 0;
+    }
+    
+}
+.sugs {
+    
+    position: absolute;
+    display: none;
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #dae2e9;
+    border-top: 0;
+    left: 41px;
+    top: 68px;
+    right: 41px;
+    list-style: none;
+    padding: 3px 0;
+    font-size: $font-size-sugs;
+    @include border-radius-bottom (5px, 5px);
+    
+    li {
+    
+        a {
+            display: block;
+            padding: 3px 8px;
+            color: #74889e;
+            
+            &:active {
+                background: #939fad;
+            }
+        }
+        
+        &.active a {
+            background: #b7c2cf;
+            color: #ffffff;
+        }
+    }
+}

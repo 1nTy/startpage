@@ -12,14 +12,36 @@ Custom browser Homepage. Work In Progress. Better README in final version.
 
 ## License
 
-* Code is released under the terms of the [**GPL**](https://github.com/1nTy/startpage/blob/master/LICENSE) license
-* Icons are released under the term of the [**Creative Commons**](http://creativecommons.org/licenses/by-nc-sa/4.0/) license
-<br><p align="center">![license](http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)</p>
+This project is released under the terms of the [**GPL**](https://github.com/1nTy/startpage/blob/master/LICENSE) license
 
-### This project use this opensource resuorces:
+### Opensource Resources
 
-* [InfiniseGo](https://github.com/infinise/InfiniseGo)
-* [JQuery]() 1.11.0
+
+#### [JQuery](https://jqueryui.com/)
+
+#### [InfiniseGo](https://github.com/infinise/InfiniseGo)
+
+```
+Copyright (c) 2012 Philipp Antoni, http://infinise.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+```
+
+## Support
+
+**CustomPage** is actually supported by:
+
+* Google Chrome / Cromium
+* Safari
+* Opera
+
+Untested:
+
+Microsoft Internet Explorer
+
+
 
 
 ## To do
